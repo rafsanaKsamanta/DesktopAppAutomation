@@ -27,8 +27,8 @@ public class NotepadTest {
             capabilities.setCapability("app", "C:\\Windows\\system32\\notepad"); // define path of the application
             capabilities.setCapability("platformName", "Windows");
             capabilities.setCapability("deviceName", "WindowsPC");
-            notepadSession = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
-            notepadSession.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+            notepadSession = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities); // appium server
+            notepadSession.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS); // sleep time
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -45,6 +45,8 @@ public class NotepadTest {
         notepadSession.quit();
     }
 
+
+    //write test cases from here
     @Test
     public void checkAboutWindow() {
         notepadSession.findElementByName("Settings").click();
