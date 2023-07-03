@@ -10,6 +10,8 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.util.concurrent.TimeUnit;
 
+// class create and give appropriate name
+
 public class NotepadTest {
     private static WindowsDriver notepadSession = null;
 
@@ -22,7 +24,7 @@ public class NotepadTest {
     public static void setUp() {
         try {
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("app", "C:\\Windows\\system32\\notepad");
+            capabilities.setCapability("app", "C:\\Windows\\system32\\notepad"); // define path of the application
             capabilities.setCapability("platformName", "Windows");
             capabilities.setCapability("deviceName", "WindowsPC");
             notepadSession = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
