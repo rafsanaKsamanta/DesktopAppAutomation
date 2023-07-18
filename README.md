@@ -10,4 +10,6 @@ Desktop Application Automation Template
  
 >> Define the path of the desktop application
  
->> For identifying the Classes and IDs use locators (Ex: Accessibility Insights)
+>> For identifying the Classes and IDs use locators (Ex: Accessibility Insights) - https://accessibilityinsights.io/docs/windows/overview/
+
+>> https://medium.com/software-testing-break-and-improve/tutorial-windows-app-automation-using-winappdriver-and-java-5be661335b25
